@@ -14,6 +14,7 @@ Just run the following command in your terminal:
 # Move to one of the folders LRU/Memory Partitioning
 # cd Memory Partitioning
 # cd LRU
+npm install
 npm run start
 ```
 
