@@ -1,0 +1,15 @@
+{
+  "name": "lru",
+  "version": "1.0.0",
+  "description": "Implementing LRU For Replacement In OS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Omid Davar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.9"
+  }
+}

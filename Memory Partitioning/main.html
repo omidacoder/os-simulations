@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Memory Partitioning</title>
+    <link rel="stylesheet" href="css/bulma.min.css"/>
+</head>
+<body style="background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);">
+<div style="padding-right: 40px">
+    <div class="columns is-mobile" style="margin-top: auto">
+        <div class="column"></div>
+        <div class="column">
+            <div class="container" style="text-align: center">
+                <h1 style="color: ghostwhite; font-size: 30pt">Memory Partitioning Implemantation</h1><br>
+            </div>
+        </div>
+        <div class="column"></div>
+    </div>
+    <div class="columns">
+        <div class="column" style="text-align: center;color: ghostwhite">
+            <h1>Unequal Fixed Partitioning</h1>
+            <div class="control" style="text-align: center">
+                <input id="unequal-memory-size" style="margin: 20px" class="input" type="text" placeholder="Memory Size">
+                <input id="unequal-partition" style="margin: 20px" class="input" type="text" placeholder="Partition Sizes eg:8,10,60,30">
+                <div class="field" style="display: flex;flex-direction: row;justify-content: center;align-items: center;align-self: center">
+                    <p class="control">
+                        <span class="select">
+                          <select id="unequal-select">
+                            <option selected>Single Queue</option>
+                            <option>Multiple Queue</option>
+                          </select>
+                        </span>
+                    </p>
+                </div>
+                <button class="button is-light" onclick="unequalStart();" id="unequal-start"> Start</button>
+            </div>
+        </div>
+        <div class="column" style="text-align: center;color: ghostwhite">
+            <h1>Equal Fixed Partitioning</h1>
+            <div class="control" style="text-align: center">
+                <input id="equal-memory-size" style="margin: 20px" class="input" type="text" placeholder="Memory Size">
+                <input id="equal-partition" style="margin: 20px" class="input" type="text" placeholder="Partition Size">
+                <div class="field" style="display: flex;flex-direction: row;justify-content: center;align-items: center;align-self: center">
+                    <p class="control">
+                        <span class="select">
+                          <select id="equal-select">
+                            <option selected>Single Queue</option>
+                            <option>Multiple Queue</option>
+                          </select>
+                        </span>
+                    </p>
+                </div>
+                <button class="button is-light" onclick="equalStart()" id="equal-start"> Start</button>
+            </div>
+        </div>
+        <div class="column" style="text-align: center;color: ghostwhite">
+            <h1>Exponential Fixed Partitioning</h1>
+            <div class="control" style="text-align: center">
+                <input id="ex-pow" style="margin: 20px" class="input" type="text" placeholder="Pow">
+                <div class="field" style="display: flex;flex-direction: row;justify-content: center;align-items: center;align-self: center">
+                    <p class="control">
+                        <span class="select">
+                          <select id="ex-select">
+                            <option selected>Single Queue</option>
+                            <option>Multiple Queue</option>
+                          </select>
+                        </span>
+                    </p>
+                </div>
+                <button class="button is-light" onclick="exStart()" id="ex-start"> Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="columns" style="margin-top: 40px">
+        <div class="column is-full" style="display: flex;flex-direction: column;justify-content: center;align-items: center;align-self: center">
+            <h1 style="font-size: 20pt;color: ghostwhite">Processes</h1>
+            <button class="button is-light" style="margin-top: 20px" onclick="addProcess()"> Add Process</button>
+            <div  style="width:100%;background-color: #d8e4f8;margin-left: 40px;margin-top: 20px" id="processes">
+            </div>
+        </div>
+    </div>
+    <h1 style="font-size: 20pt;color: ghostwhite;text-align: center">Memory Result</h1>
+    <p id="my-counter" style="color: ghostwhite;text-align: center"></p>
+    <div class="columns" id="queues" style="text-align: center">
+        <!-- Queues -->
+
+    </div>
+    <div class="columns" id="memory">
+        <!-- Memory -->
+    </div>
+</div>
+<script src="App.js" ></script>
+</body>
+</html>

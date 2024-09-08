@@ -1,0 +1,16 @@
+{
+  "name": "memory-partitioning",
+  "version": "1.0.0",
+  "description": "implementing memory partitioning in Os",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "omid davar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.9"
+  },
+  "dependencies": {}
+}
